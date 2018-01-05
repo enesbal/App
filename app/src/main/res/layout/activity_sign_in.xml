@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bal.enes.myapplication.Activities.SignInActivity">
+
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Sign In BookShare"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/FnameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/headerText"
+        android:layout_alignStart="@+id/headerText"
+        android:layout_below="@+id/headerText"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/FnameEditText"
+        android:layout_alignStart="@+id/FnameEditText"
+        android:layout_below="@+id/FnameEditText"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/headerText"
+        android:layout_alignRight="@+id/headerText"
+        android:layout_below="@+id/headerText"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="236dp"
+        android:text="Sign In" />
+</RelativeLayout>

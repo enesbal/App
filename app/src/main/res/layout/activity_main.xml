@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bal.enes.myapplication.MainActivity">
+
+
+
+    <Button
+        android:id="@+id/kayit_ol"
+        android:onClick="goToRegisterActivity"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="169dp"
+        android:layout_weight="1"
+        android:text="Kayıt Ol" />
+
+    <Button
+        android:id="@+id/giris_yap"
+        android:onClick="goToSignInActivity"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/kayit_ol"
+        android:layout_alignStart="@+id/kayit_ol"
+        android:layout_below="@+id/kayit_ol"
+        android:layout_marginTop="125dp"
+        android:layout_weight="1"
+        android:text="Giriş Yap" />
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Kitap Paylaşma Uygulaması"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/bookPresenterBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Button"
+        android:onClick="goToBookPresenterActivity"/>
+
+
+</RelativeLayout>
